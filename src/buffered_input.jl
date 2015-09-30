@@ -7,8 +7,8 @@
 type BufferedInput
     input::IO
     buffer::Vector{Char}
-    offset::Uint
-    avail::Uint
+    offset::UInt
+    avail::UInt
 
     function BufferedInput(input::IO)
         return new(input, Array(Char, 0), 0, 0)
